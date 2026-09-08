@@ -14,7 +14,7 @@ metadata:
     appstudio.openshift.io/component: mycomp
     pipelines.appstudio.openshift.io/type: build
   name: mycomp-on-push
-  namespace: konflux-perfscale-1-tenant
+  namespace: konflux-perfscale-3-tenant
 spec:
   params:
   - name: git-url
@@ -22,7 +22,7 @@ spec:
   - name: revision
     value: '{{revision}}'
   - name: output-image
-    value: quay.io/redhat-user-workloads-stage/konflux-perfscale-1-tenant/mycomp:{{revision}}
+    value: quay.io/redhat-user-workloads-stage/konflux-perfscale-3-tenant/mycomp:{{revision}}
   - name: dockerfile
     value: /Dockerfile
   pipelineSpec:
